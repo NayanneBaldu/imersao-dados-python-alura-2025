@@ -2,6 +2,11 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
+df = pd.read_csv("dados_imersao_final.csv")
+df = pd.read_csv("data/dados.csv")
+
+
+
 st.set_page_config(
     page_title="Dashboard de Salários na Área de Dados",
     page_icon="📊",
@@ -127,3 +132,4 @@ with col_graf4:
 # --- Tabela de Dados Detalhados ---
 st.subheader("Dados Detalhados")
 st.dataframe(df_filtrado)
+
